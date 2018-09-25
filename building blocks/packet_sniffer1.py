@@ -16,4 +16,4 @@ def process_sniffed_packet(packet):
         # print(packet.show())
 
 
-sniff("wlp1s0")
+sniff("wlan0")
